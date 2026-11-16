@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fit Maintenance Miami | Logo</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+  .sheet { padding-top: 56px; padding-bottom: 96px; }
+  .sheet h1 { font-size: clamp(48px, 7vw, 96px); }
+  .sheet > p { margin-top: 18px; max-width: 38em; font-size: 18px; color: #3f4246; }
+  .sheet h2 { font-size: 20px; font-weight: 700; margin: 64px 0 18px; }
+  .tiles { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+  .tile { border-radius: 6px; min-height: 300px; display: grid; place-items: center; padding: 32px; }
+  .tile.wide { grid-column: span 2; }
+  .on-oxblood { background: var(--oxblood); color: var(--chalk); --mark-bg: #eef0ef; --mark-fg: #5b0f1c; }
+  .on-chalk { background: #fff; color: var(--oxblood); --mark-bg: #5b0f1c; --mark-fg: #ffffff; }
+  .on-rubber { background: var(--rubber); color: #fff; --mark-bg: #ffffff; --mark-fg: #17181a; }
+  .big-mark { width: min(190px, 60%); aspect-ratio: 1; }
+  .lockup.xl { gap: clamp(14px, 2vw, 26px); }
+  .lockup.xl svg { width: clamp(72px, 10vw, 128px); height: clamp(72px, 10vw, 128px); }
+  .lockup.xl .lockup-name { font-size: clamp(40px, 5.6vw, 74px); }
+  .lockup.xl .lockup-place { font-size: clamp(13px, 1.7vw, 22px); margin-top: .55em; }
+  .stacked { display: grid; justify-items: center; gap: 18px; text-align: center; }
+  .stacked svg { width: 120px; height: 120px; }
+  .stacked .lockup-name { font-size: 46px; }
+  .stacked .lockup-place { font-size: 14px; margin-top: 10px; display: block; margin-right: -.38em; }
+  .sizes { display: flex; align-items: end; gap: 28px; flex-wrap: wrap; }
+  .sizes svg { flex: none; }
+  .swatches { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 12px; }
+  .swatch { border-radius: 6px; padding: 14px; min-height: 120px; display: flex; flex-direction: column; justify-content: flex-end; font-size: 14px; font-weight: 600; line-height: 1.3; }
+  .notes { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px 40px; }
+  .notes h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+  .notes p { color: #3f4246; font-size: 16px; }
+  @media (max-width: 860px) { .tiles, .notes { grid-template-columns: 1fr; } .tile.wide { grid-column: auto; } .swatches { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 100 100">
+    <path d="M50 7 87.2 28.5v43L50 93 12.8 71.5v-43Z" fill="var(--mark-bg)" stroke="var(--mark-bg)" stroke-width="8" stroke-linejoin="round"/>
+    <g fill="var(--mark-fg)" stroke="var(--mark-fg)" stroke-width="2.4" stroke-linejoin="round">
+      <path id="mb" d="M48.4 42.5 45.6 20.5Q55 14.5 64.4 19.5L53.4 42.5Z"/>
+      <use href="#mb" transform="rotate(60 50 50)"/><use href="#mb" transform="rotate(120 50 50)"/><use href="#mb" transform="rotate(180 50 50)"/><use href="#mb" transform="rotate(240 50 50)"/><use href="#mb" transform="rotate(300 50 50)"/>
+    </g>
+    <circle cx="50" cy="50" r="9.5" fill="var(--mark-fg)"/>
+    <path d="M50 45.2 54.2 47.6v4.8L50 54.8 45.8 52.4v-4.8Z" fill="var(--mark-bg)"/>
+  </symbol>
+</svg>
+
+<main class="sheet wrap">
+  <h1 class="display">The new logo</h1>
+  <p>An air bike fan inside a hex nut. The fan is the machine Octavio services most, the nut is the work. Six blades line up with the six sides, so it stays readable as a tiny icon, a sticker or a stamp on a work shirt.</p>
+
+  <h2>Main logo</h2>
+  <div class="tiles">
+    <div class="tile wide on-oxblood">
+      <span class="lockup xl"><svg aria-hidden="true"><use href="#mark"/></svg><span class="lockup-text"><span class="lockup-name">Fit Maintenance</span><span class="lockup-place">Miami</span></span></span>
+    </div>
+    <div class="tile on-chalk">
+      <span class="stacked"><svg aria-hidden="true"><use href="#mark"/></svg><span><span class="lockup-name">Fit Maintenance</span><span class="lockup-place">Miami</span></span></span>
+    </div>
+  </div>
+
+  <h2>The mark on its own</h2>
+  <div class="tiles">
+    <div class="tile on-chalk"><svg class="big-mark" aria-hidden="true"><use href="#mark"/></svg></div>
+    <div class="tile on-oxblood"><svg class="big-mark" aria-hidden="true"><use href="#mark"/></svg></div>
+    <div class="tile on-rubber"><svg class="big-mark" aria-hidden="true"><use href="#mark"/></svg></div>
+  </div>
+
+  <h2>Small sizes</h2>
+  <div class="tile on-chalk" style="min-height:160px;border:1px solid rgba(23,24,26,.15)">
+    <div class="sizes">
+      <svg width="96" height="96"><use href="#mark"/></svg>
+      <svg width="64" height="64"><use href="#mark"/></svg>
+      <svg width="40" height="40"><use href="#mark"/></svg>
+      <svg width="24" height="24"><use href="#mark"/></svg>
+      <svg width="16" height="16"><use href="#mark"/></svg>
+    </div>
+  </div>
+
+  <h2>Colors</h2>
+  <div class="swatches">
+    <div class="swatch" style="background:#5b0f1c;color:#eef0ef">Oxblood<br>#5B0F1C</div>
+    <div class="swatch" style="background:#2c070d;color:#eef0ef">Deep oxblood<br>#2C070D</div>
+    <div class="swatch" style="background:#17181a;color:#eef0ef">Rubber<br>#17181A</div>
+    <div class="swatch" style="background:#9aa3a6;color:#17181a">Steel<br>#9AA3A6</div>
+    <div class="swatch" style="background:#eef0ef;color:#17181a;border:1px solid rgba(23,24,26,.15)">Chalk<br>#EEF0EF</div>
+    <div class="swatch" style="background:#f5b921;color:#17181a">Plate yellow<br>#F5B921</div>
+  </div>
+
+  <h2>What carried over, what changed</h2>
+  <div class="notes">
+    <div><h3>Kept</h3><p>The dark red from the current logo. People who know the business already know that color.</p></div>
+    <div><h3>Changed</h3><p>The barbell drawing is gone. It was thin, wide and hard to read small. The new mark is one solid shape.</p></div>
+    <div><h3>Type</h3><p>Archivo, set tight and heavy for the name and wide and light for Miami. Free to use, including in print.</p></div>
+  </div>
+</main>
+</body>
+</html>
