@@ -46,14 +46,14 @@
       .map(function (b) { return b.value; });
 
     if (!name) { error.textContent = 'Add your name so Octavio knows who to reply to.'; form.elements.name.focus(); return; }
-    if (!picked.length) { error.textContent = 'Pick at least one thing that needs work.'; return; }
+    if (!picked.length) { error.textContent = 'Pick at least one thing you need.'; return; }
     error.textContent = '';
 
     var lines = [
       'Name: ' + name,
-      'Gym: ' + (form.elements.gym.value.trim() || 'Not given'),
+      'Gym or organization: ' + (form.elements.gym.value.trim() || 'Not given'),
       'Phone: ' + (form.elements.phone.value.trim() || 'Not given'),
-      'Equipment: ' + picked.join(', '),
+      'Needs: ' + picked.join(', '),
       'Painting: ' + (form.elements.paint.checked ? 'Yes' : 'No'),
       '',
       form.elements.notes.value.trim()

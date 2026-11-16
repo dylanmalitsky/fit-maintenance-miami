@@ -203,3 +203,24 @@ h1, h2, h3, p { margin: 0; }
   .site-footer { padding-bottom: 110px; }
 }
 @media (prefers-reduced-motion: reduce) { .quickbar, .quickbar.is-on { transition: none; } }
+
+/* Gym build-outs */
+.buildouts { padding-top: clamp(64px, 9vw, 130px); padding-bottom: clamp(64px, 9vw, 130px); }
+.buildouts .section-head { grid-template-columns: 1fr; }
+.buildouts .section-head p { max-width: 36em; }
+.build-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 48px clamp(40px, 6vw, 96px); align-items: start; border-top: 3px solid var(--rubber); padding-top: 18px; }
+.build-label { font-size: 15px; font-weight: 700; font-stretch: 112%; margin-bottom: 18px; }
+.who { list-style: none; margin: 0; padding: 0; }
+.who li { font-stretch: 62%; font-weight: 900; text-transform: uppercase; font-size: clamp(40px, 5.4vw, 76px); line-height: .98; color: var(--oxblood); }
+.stages { margin: 0 0 32px; }
+.stages div { display: grid; grid-template-columns: 5.2em minmax(0, 1fr); gap: 20px; padding: 18px 0; border-top: 1px solid rgba(23, 24, 26, .18); }
+.stages div:first-child { border-top: 0; padding-top: 0; }
+.stages dt { font-stretch: 62%; font-weight: 800; font-size: 30px; line-height: 1; text-transform: uppercase; }
+.stages dd { margin: 0; color: #3f4246; max-width: 32em; }
+.btn-dark { background: var(--rubber); color: var(--chalk); }
+.btn-dark:hover { background: var(--oxblood); }
+@media (max-width: 860px) {
+  .buildouts .section-head, .build-grid { grid-template-columns: 1fr; }
+  .stages div { grid-template-columns: 1fr; gap: 6px; }
+  .buildouts .btn-dark { width: 100%; }
+}
